@@ -2,12 +2,19 @@ h1{
 	text-align: center;
 	font-size:2.75em;
 }
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #ECECEC;
+	font-family:Arial;
+}
+.row{
+	width:100%;
+}
 @media (min-width:992px){
 	.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
 		float:left;
-		border:1px solid black;
-		padding:10px;
-		box-sizing: border-box;
 	}
 	.col-lg-1{
 		width:8.33%;
@@ -19,15 +26,13 @@ h1{
 		width: 25%;
 		}
 	.col-lg-4{
-		width:31%;	
-		margin-right: 10px;
+		width:33.33%;
 		}
 	.col-lg-5{
-		width:41.33%;
+		width:41.66%;
 	}
 	.col-lg-6{
 		width:50%;
-
 	}
 	.col-lg-7{
 		width:58.33%;
@@ -51,11 +56,8 @@ h1{
 @media (min-width: 768px) and (max-width: 991px){
 	.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
 		float:left;
-		border:1px solid black;
-		padding:10px;
-		box-sizing: border-box;
 	}
-	.col-md-1{
+		.col-md-1{
 		width:8.33%;
 		}
 	.col-md-2{
@@ -95,9 +97,6 @@ h1{
 @media (max-width: 767px){
 	.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{
 		float:left;
-		border:1px solid black;
-		padding:10px;
-		box-sizing: border-box;	
 	}
 	.col-sm-1{
 		width:8.33%;
@@ -134,39 +133,35 @@ h1{
 	}
 	.col-sm-12{
 		width:100%;
-		margin-bottom: 10px;
 	}
 }
-span{
-	position: relative;
-	top:-10px;
-	right:-10px;
+p{
+	font-size:16px;
+	clear:right;
+	padding:10px;
+}
+section>h2{
+	float:right;
+	background-color: red;
+	margin-top: 0px;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
-	padding-right: 15px;
-	padding-left: 15px;
+	width:150px;
+	text-align:center;
 	font-size:1.25em;
 
 }
-p{
-	text-align: left;
+section{
+	border:1px solid black;
+	margin:10px;
+	background-color: #C0C0C0;
 }
-
-.sec1{
-	text-align: right;
+section.abc>h2{
+	background-color: lightpink;
 }
-.sec2{
-	text-align: right;
+section.def>h2{
+	background-color: red;
 }
-.sec3{
-	text-align: right;
-}
-#sp1{
-	background-color:red;
-}
-#sp2{
-	background-color: blue;
-}
-#sp3{
-	background-color:green;
+section.ghi>h2{
+	background-color: yellow;
 }
